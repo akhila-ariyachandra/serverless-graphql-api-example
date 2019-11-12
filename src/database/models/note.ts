@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 export interface INote extends mongoose.Document {
   title: string;
   content: string;
+  date: Date;
 }
 
 const schema: mongoose.SchemaDefinition = {
