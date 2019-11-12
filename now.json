@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "serverless-graphql-api-example",
+  "env": {
+    "DB_PATH": "@serverless-graphql-api-example-dp-path"
+  }
+}
