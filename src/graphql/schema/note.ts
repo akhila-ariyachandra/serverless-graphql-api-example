@@ -3,12 +3,12 @@ import { gql } from "apollo-server-micro";
 export default gql`
   extend type Query {
     getAllNotes: [Note!]
-    getNote(_id: ID!): Note!
+    getNote(_id: ID!): Note
   }
 
   extend type Mutation {
     saveNote(title: String!, content: String!): Note!
-    deleteNote(_id: ID!): Note!
+    deleteNote(_id: ID!): Note
   }
 
   type Note {
