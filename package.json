@@ -8,14 +8,15 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@types/mongoose": "^5.5.30",
+    "@types/mongoose": "^5.5.32",
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "apollo-server-micro": "^2.9.7",
+    "apollo-server-micro": "^2.9.12",
     "dayjs": "^1.8.17",
     "graphql": "^14.5.8",
     "graphql-iso-date": "^3.6.1",
-    "mongoose": "^5.7.10"
+    "mongoose": "^5.7.12",
+    "now": "^16.6.0"
   }
 }
