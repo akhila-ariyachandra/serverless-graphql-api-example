@@ -1,5 +1,7 @@
 # Serverless GraphlQL API Example
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V5ZOMO)
+
 [Example Deployment](https://serverless-graphql-api-example-five-gamma.now.sh/api/graphql)
 
 A serverless GraphQL API built with TypeScript and MongoDB
