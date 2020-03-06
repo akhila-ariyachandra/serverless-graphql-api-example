@@ -6,6 +6,8 @@
 
 A serverless GraphQL API built with TypeScript and MongoDB
 
+The explaination of the API can my found on my [blog](https://akhilaariyachandra.com/create-a-serverless-api-with-typescript-graphql-and-mongodb).
+
 ## Local Development
 
 The [Now CLI](https://zeit.co/download) will need be downloaded, installed and logged into.
