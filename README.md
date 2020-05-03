@@ -18,13 +18,19 @@ After that create a `.env` file and add the `DB_PATH` environment variable with 
 DB_PATH=mongodb://<user>:<password>@ds123456.mlab.com:54321/example-db
 ```
 
+Then link it to a Vercel project.
+
+```shell
+now
+```
+
 Finally run
 
 ```shell
 now dev
 ```
 
-## Deploying to [Zeit](https://zeit.co/)
+## Deploying to [Vercel](https://vercel.com/home)
 
 First upload the database path as an [Environment Variable](https://vercel.com/blog/environment-variables-ui).
 
@@ -34,7 +40,7 @@ now env add
 
 Name the variable `DB_PATH` and make sure you make to available for all three environments (**Production**, **Preview** and **Development**).
 
-All that's let to do is deploying to now.
+Then all that’s left to do is to deploy to Vercel.
 
 ```shell
 now
