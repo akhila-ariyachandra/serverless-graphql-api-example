@@ -26,13 +26,15 @@ now dev
 
 ## Deploying to [Zeit](https://zeit.co/)
 
-First create a **Now Secret** with the name `serverless-graphql-api-example-dp-path` which has the database URI.
+First upload the database path as an [Environment Variable](https://vercel.com/blog/environment-variables-ui).
 
 ```shell
-now secrets add serverless-graphql-api-example-dp-path "mongodb://root:root1user@ds021356.mlab.com:21356/serverless-graphql-api-example"
+now env add
 ```
 
-Then just deploy!
+Name the variable `DB_PATH` and make sure you make to available for all three environments (**Production**, **Preview** and **Development**).
+
+All that's let to do is deploying to now.
 
 ```shell
 now

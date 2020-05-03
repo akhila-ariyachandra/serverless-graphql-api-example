@@ -1,24 +1,17 @@
-import { Connection, createConnection } from "mongoose";
-
-let conn: Connection = null;
+import mongoose from "mongoose";
 
 const uri: string = process.env.DB_PATH;
 
-export const getConnection = async (): Promise<Connection> => {
-  // Because `conn` is in the global scope, Lambda may retain it between
-  // function calls thanks to `callbackWaitsForEmptyEventLoop`.
-  // This means your Lambda function doesn't have to go through the
-  // potentially expensive process of connecting to MongoDB every time.
+let conn: mongoose.Connection = null;
+
+export const getConnection = async (): Promise<mongoose.Connection> => {
   if (conn == null) {
-    conn = await createConnection(uri, {
-      // Buffering means mongoose will queue up operations if it gets
-      // disconnected from MongoDB and send them when it reconnects.
-      // With serverless, better to fail fast if not connected.
+    conn = await mongoose.createConnection(uri, {
       bufferCommands: false, // Disable mongoose buffering
       bufferMaxEntries: 0, // and MongoDB driver buffering
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true
+      useCreateIndex: true,
     });
   }
 

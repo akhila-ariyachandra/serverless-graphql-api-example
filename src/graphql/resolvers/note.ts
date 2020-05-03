@@ -41,7 +41,7 @@ export default {
 
         throw new ApolloError("Error retrieving all notes");
       }
-    }
+    },
   },
 
   Mutation: {
@@ -56,7 +56,7 @@ export default {
         const note = await Note.create({
           title,
           content,
-          date: dayjs().toDate()
+          date: dayjs().toDate(),
         });
 
         return note;
@@ -83,6 +83,6 @@ export default {
 
         throw new ApolloError("Error retrieving all notes");
       }
-    }
-  }
+    },
+  },
 };

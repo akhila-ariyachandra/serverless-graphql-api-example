@@ -2,21 +2,36 @@
   "name": "serverless-graphql-api-example",
   "version": "1.0.0",
   "description": "A serverless GraphQL API built with TypeScript and MongoDB",
-  "main": "api/graphql.ts",
-  "repository": "https://github.com/akhila-ariyachandra/serverless-graphql-api-example.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhila-ariyachandra/serverless-graphql-api-example.git"
+  },
+  "keywords": [
+    "serveless",
+    "mongodb",
+    "typescript",
+    "api",
+    "now"
+  ],
   "author": "akhila-ariyachandra <akhila_ariyachandra@live.com>",
   "license": "MIT",
-  "private": false,
+  "bugs": {
+    "url": "https://github.com/akhila-ariyachandra/serverless-graphql-api-example/issues"
+  },
+  "homepage": "https://github.com/akhila-ariyachandra/serverless-graphql-api-example#readme",
   "devDependencies": {
-    "@types/mongoose": "^5.5.32",
-    "typescript": "^3.7.2"
+    "@types/mongoose": "^5.7.14",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
-    "apollo-server-micro": "^2.9.12",
-    "dayjs": "^1.8.17",
-    "graphql": "^14.5.8",
+    "apollo-server-micro": "^2.12.0",
+    "dayjs": "^1.8.26",
+    "graphql": "^15.0.0",
     "graphql-iso-date": "^3.6.1",
-    "mongoose": "^5.7.12",
-    "now": "^16.6.0"
+    "mongoose": "^5.9.11"
   }
 }
